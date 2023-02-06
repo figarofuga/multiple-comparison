@@ -7,7 +7,9 @@
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
 		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {},
-		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {}
+		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+			 "packages": "multcomp,skimr,ggpubr"
+		}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
