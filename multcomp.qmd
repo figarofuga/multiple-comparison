@@ -1,0 +1,35 @@
+---
+title: "Bootstrapについて"
+author: "Nozomi Niimi"
+date: "2/10/2023"
+format:
+  revealjs:
+    smaller: true
+engine: knitr
+bibliography: multcomp.bib
+---
+
+```{r, setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(
+  comment = '', fig.width = 6, fig.height = 6, echo = FALSE, warning = FALSE
+)
+library(tibble)
+library(dplyr)
+library(kableExtra)
+library(multcomp)
+```
+
+## クイズ
+
+![](images/bootstrap_quiz.jpeg){height="300px" fig-align="center"}
+
+1.  Bootstrapは靴の中のどの部分でしょうか？
+2.  Bootstrap信頼区間を出すときには何回繰り返しが必要でしょうか？
+3.  Bootstrap信頼区間を出す前に必ずやらないといけない方法はなんでしょうか？
+4.  Bootstrap信頼区間の時に良い方法はなんでしょうか？
+
+## Introduction
+
+-   最近研究でbootstrapを使う事が複数回あった
+-   正直雰囲気でやっていたので、しっかり勉強してみたい
